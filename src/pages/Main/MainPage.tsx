@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { SimpleGrid } from "@chakra-ui/react";
 import ImageCartItem from "../../componants/MainPage/ImageCartItem";
-import data from "../../test/data";
+import data from "../../data-test/data";
 
 export interface Photo {
   albumId: number;
@@ -16,11 +16,6 @@ const MainPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
 
   useEffect(() => {
-    // axios
-    //   .get("https://jsonplaceholder.typicode.com/albums/1/photos")
-    //   .then((res) => setPhotos(res.data))
-    //   .catch((err) => console.log(err.message));
-
     setPhotos(data)
   }, []);
 
