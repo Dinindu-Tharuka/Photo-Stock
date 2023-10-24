@@ -1,9 +1,11 @@
-import { Button } from '@chakra-ui/react'
+import NavBar from "./componants/Navbar/Main/NavBar";
 
 function App() {
-  return <div >
-    <Button>Hello world</Button>
-  </div>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
 
 export default App;

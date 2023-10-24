@@ -1,8 +1,11 @@
-
+import { VStack } from '@chakra-ui/react'
+import NavBarHeader from '../Header/NavBarHeader'
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <VStack padding={5}>
+      <NavBarHeader/>
+    </VStack>
   )
 }
 
