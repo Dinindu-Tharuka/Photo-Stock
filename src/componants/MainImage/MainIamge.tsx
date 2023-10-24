@@ -11,7 +11,7 @@ import mainImage from "../../images/pineapple.jpg";
 const MainIamge = () => {
   return (
     <Flex height="90vh">
-      <Image src={mainImage} width={"100vw"} />
+      <Image src={mainImage} width={"100vw"} objectFit='cover'/>
 
       <InputGroup
         zIndex={10}
