@@ -1,8 +1,8 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { SimpleGrid } from "@chakra-ui/react";
 import ImageCartItem from "../../componants/MainPage/ImageCartItem";
 import data from "../../data-test/data";
+import MainIamge from "../../componants/MainImage/MainIamge";
 
 export interface Photo {
   albumId: number;
@@ -16,13 +16,14 @@ const MainPage = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
 
   useEffect(() => {
-    setPhotos(data)
+    setPhotos(data);
   }, []);
 
-  console.log(photos)
+  console.log(photos);
 
   return (
     <>
+      <MainIamge />
       <SimpleGrid columns={3} spacing={5} paddingX={10}>
         {photos.map((photo) => (
           <ImageCartItem photo={photo} />
