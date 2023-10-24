@@ -1,9 +1,10 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import React from "react";
+import MainIamge from "../../MainImage/MainIamge";
 
 const NavBarFooter = () => {
   return (
-      <Tabs width='100%'>
+      <Tabs width='100%' >
         <TabList>
           <Tab>Main</Tab>
           <Tab>Admin</Tab>
@@ -11,15 +12,10 @@ const NavBarFooter = () => {
         </TabList>
 
         <TabPanels>
-          <TabPanel>
-            <p>one!</p>
+          <TabPanel padding={0}>
+            <MainIamge/>
           </TabPanel>
-          <TabPanel>
-            <p>two!</p>
-          </TabPanel>
-          <TabPanel>
-            <p>three!</p>
-          </TabPanel>
+          
         </TabPanels>
       </Tabs>
    

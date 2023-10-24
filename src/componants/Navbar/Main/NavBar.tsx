@@ -4,7 +4,7 @@ import NavBarFooter from '../Footer/NavBarFooter'
 
 const NavBar = () => {
   return (
-    <VStack padding={5}>
+    <VStack padding={0}>
       <NavBarHeader/>
       <NavBarFooter/>
     </VStack>

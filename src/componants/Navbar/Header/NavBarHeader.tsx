@@ -5,7 +5,7 @@ import DarkModeSwitch from "../../DarkModeSwitch/DarkModeSwitch";
 
 const NavBarHeader = () => {
   return (
-    <HStack justifyContent='space-between' width='100%' spacing={5}>
+    <HStack justifyContent='space-between' width='100%' spacing={5} padding={5}>
       <Image src={logo} boxSize='32px'/>
       <InputGroup>
         <InputLeftAddon children={<BsSearch/>} />
